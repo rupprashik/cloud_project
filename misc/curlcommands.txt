@@ -1,0 +1,5 @@
+HTTP Request to access server directly - 
+curl http://<Remote Server IP>/Thingworx/Things/SmartHomeSystem_<User ID>/Properties/LED -v -H "appKey:<User App Key>" -H "Content-Type:application/json" 
+
+HTTP Request to access EMS running on local host (no appkey needed) - will be forwarded to remote server 
+curl http://127.0.0.1:8080/Thingworx/Things/SmartHomeSystem_<User ID>/Properties/LED -v -H "Content-Type:application/json" 
